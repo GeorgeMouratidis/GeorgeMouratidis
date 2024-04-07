@@ -271,7 +271,7 @@ body {
 
 }
 
-@media (min-width:320px ){
+@media (max-width:420px ){
 
   .workAnimation > div > div {
     padding: 0.25rem 0.75rem;
