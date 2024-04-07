@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Reconstruction Optimization AR Renderring </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./stylingProjects.css">
+</head>
+<body class="projects">
+
+    <div class="container rounded" style="background-color: #E14D2A;">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills rounded">
+            <li class="nav-item back_col_change"><a href="#home" class="nav-link  " aria-current="page">Home</a></li>
+            <li class="nav-item back_col_change"><a href="#summary" class="nav-link ">Project Summary</a></li>
+            <li class="nav-item back_col_change"><a href="#concepts" class="nav-link ">Key Concepts</a></li>
+            <li class="nav-item back_col_change"><a href="#software" class="nav-link ">Relevant software and Programming languages</a></li>
+            <li class="nav-item back_col_change"><a href="#demo" class="nav-link ">Demo</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <div class="d-flex justify-content-center text-center" id="home">
+        <h1>3D Reconstruction, Optimization  <br>and <br>AR Renderring</h1>
+    </div>
+    
+    <div class="container" id="summary" style="width: 65%;">
+        <h2>Project Description</h2>
+        <hr>
+
+        <p>In summary, this project, which is also my diploma thesis, combines three very interesting topics, computer
+             vision, augmented reality and optimized problem solving. The first part
+            of the project, consists of reconstructing an indoor scene, such as a room, given a video sequence of the afforementioned scene. This stage 
+            makes use of various relative approaches, such as the Structure from Motion problem (SfM) and visual Simultaneous Localization and Mapping (SLAM). The output of this stage 
+            is a point cloud that depicts the given indoor scene in the user's computer. Note that before the phase of the reconstruction even begins, the preprocessing
+            step of the user's camera calibration is necessary in order to acquire the intrinsic parameters of the camera.
+        </p>
+
+        <p>
+            The second phase of the project, although independent from the first, is equally promising.Given the four mostly used pieces of furniture
+            in one's home, i.e. a bed, a couch, a television and a desk, the task is to find the optimal layout, in which the user should place them in 
+            their room. In the scope of that, an objective function was developed, that assigned a cost to a given layout of the furniture, in order for it to be minimized.
+            Naturally, the lower the cost of a layout, the better the layout is for the given room. After the function was developed, a genetic optimization 
+            algorithm was implemented so as to find the optimal layout.
+        </p>
+
+        <p>
+            The final stage of the project consists of interpreting the result of the second phase in the user's actual room. For that reason, 
+            an Augmented Reality application was made, in which the user can test the result of the optimization, using the very same models as the second stage
+            in their room. The application also allows the user to move and rotate the objects, if they find that they are not satisfied with the proposed solution. 
+
+        </p>
+    </div>
+    
+
+    <div class="container" id="concepts" style="width: 65%;">
+        <h2>Key Concepts</h2>
+        <hr>
+
+        <ul>
+            <li>Computer Vision</li>
+            <li>Structure from Motion</li>
+            <li>Simultaneous Localization and Mapping</li>
+            <li>Camera Calibration</li>
+            <li>Optimization Algorithms</li>
+            <li>Genetic Algorithms for Optimization</li>
+            <li>Gradient Descent</li>
+            <li>Simulated Annealing</li>
+            <li>Augmented Reality</li> 
+
+        </ul>
+
+
+    </div>
+    
+    <div class="container" id="software" style="width: 65%;">
+        
+        <h2>Relevant software and Programming languages used</h2>
+        <hr>
+
+        <ul style="list-style-type: square;">
+            <li >Frameworks
+                <ul style="list-style-type: circle;">
+                    <li>Orbslam</li>
+                    <li>VisualSfm</li>
+                    <li>OpenCV</li>
+                    <li>Unity</li>
+
+                </ul>
+
+            </li>
+
+            <li>Programming Languages
+                <ul>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+    
+
+    <div class="container" id="demo" style="width: 65%;">
+        <h2>Demo</h2>
+        <hr>
+
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/b9k9DTQHePc" title="3D Reconstruction-Optimization-AR Renderring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+    
+
+    </div>
+    
+
+    <div class="d-flex w-100 " id="footer" style="margin-left: 0px; margin-right: 0px; margin-top: 20px;">
+        <footer class="py-3 w-100 rounded">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item foot_text_col"><a href="#home" class="nav-link px-2 ">Home</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link px-2 ">Project Summary</a></li>
+            <li class="nav-item"><a href="#concepts" class="nav-link px-2 ">Key Concepts</a></li>
+            <li class="nav-item"><a href="#software" class="nav-link px-2 ">Relevant software and Programming languages</a></li>
+            <li class="nav-item"><a href="#demo" class="nav-link px-2 ">Demo</a></li>
+          </ul>
+          <a href="../index.html"  style="text-decoration:none"><p class="text-center ">© 2023 George Mouratidis</p></a>
+          
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Graphics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./stylingProjects.css">
+</head>
+<body class="projects">
+
+    <div class="container rounded" style="background-color: #E14D2A;">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills rounded">
+            <li class="nav-item back_col_change"><a href="#home" class="nav-link  " aria-current="page">Home</a></li>
+            <li class="nav-item back_col_change"><a href="#summary" class="nav-link ">Project Summary</a></li>
+            <li class="nav-item back_col_change"><a href="#concepts" class="nav-link ">Key Concepts</a></li>
+            <li class="nav-item back_col_change"><a href="#software" class="nav-link ">Relevant software and Programming languages</a></li>
+            <li class="nav-item back_col_change"><a href="#demo" class="nav-link ">Demo</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <div class="d-flex justify-content-center text-center" id="home">
+        <h1>Computer Graphics and Virtual Realty </h1>
+    </div>
+    
+    <div class="container" id="summary" style="width: 65%;">
+        <h2>Project Description</h2>
+        <hr>
+
+        <p>This project consists of two parts: the creation of an indoor scene, and the mechanics of the player and objects.
+            In the first part, after gathering and making the necessary object and texture resources, a home with four different rooms was created.
+            This process required modelling (Blender) and UV mapping in order for the scene to be aesthetically pleasing.
+            Furthermore a Phong lighting model was implemented, making use of ambient, diffuse and specular light, as well as shadowing so as to give a realistic 
+            aspect of the light. Finally, a collision detection algorithm between the player's camera and the rooms was implemented, to give a sense of realism.
+
+        </p>
+
+        <p>
+            The second part of the project, consists of the actual mechanics of the portals, which were implemented using the stencil buffer. The teleportation 
+            of the player includes the calculation of the camera's velocity and momentum vectors, as well as their respective angles and the camera's viewing angles.
+            In adittion, a rigid body object in the shape of a sphere is implemented, which is also affected by gravity 
+            and collisions with the house's walls. The afforementioned object can also be thrown in a portal, in the same manner that a player can, and it 
+            would teleport to the portals exit.
+        </p>
+
+        <p>
+            
+
+        </p>
+    </div>
+    
+
+    <div class="container" id="concepts" style="width: 65%;">
+        <h2>Key Concepts</h2>
+        <hr>
+
+        <ul>
+            <li>Computer Graphics Pipeline</li>
+            <li>Lighting-Phong Lighting</li>
+            <li>Textures-UV Mapping</li>
+            <li>Vertex/Fragment Shaders</li>
+           
+             
+
+        </ul>
+
+
+    </div>
+    
+    <div class="container" id="software" style="width: 65%;">
+        
+        <h2>Relevant software and Programming languages used</h2>
+        <hr>
+
+        <ul style="list-style-type: square;">
+            <li >Frameworks
+                <ul style="list-style-type: circle;">
+                    <li>Visual Studio</li>
+                    <li>CMake</li>
+                    <li>OpenGL</li>
+                    <li>Blender</li>
+                    
+
+                </ul>
+
+            </li>
+
+            <li>Programming Languages
+                <ul>
+                    <li>C++</li>
+                    
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+    
+
+    <div class="container" id="demo" style="width: 65%;">
+        <h2>Demo</h2>
+        <hr>
+
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/TKd5vmV0XbQ" title="Portals Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+
+    </div>
+    
+
+    <div class="d-flex w-100" id="footer" style="margin-left: 0px; margin-right: 0px; margin-top: 20px;">
+        <footer class="py-3 w-100">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item foot_text_col"><a href="#home" class="nav-link px-2  ">Home</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link px-2 ">Project Summary</a></li>
+            <li class="nav-item"><a href="#concepts" class="nav-link px-2 ">Key Concepts</a></li>
+            <li class="nav-item"><a href="#software" class="nav-link px-2 ">Relevant software and Programming languages</a></li>
+            <li class="nav-item"><a href="#demo" class="nav-link px-2 ">Demo</a></li>
+          </ul>
+          <a href="../index.html"  style="text-decoration:none"><p class="text-center ">© 2023 George Mouratidis</p></a>
+          
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modeling Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./stylingProjects.css">
+</head>
+<body class="projects">
+
+    <div class="container rounded" style="background-color: #E14D2A;">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills rounded">
+            <li class="nav-item back_col_change"><a href="#home" class="nav-link  " aria-current="page">Home</a></li>
+            <li class="nav-item back_col_change"><a href="#summary" class="nav-link ">Project Summary</a></li>
+            <li class="nav-item back_col_change"><a href="#concepts" class="nav-link ">Key Concepts</a></li>
+            <li class="nav-item back_col_change"><a href="#software" class="nav-link ">Relevant software and Programming languages</a></li>
+            <li class="nav-item back_col_change"><a href="#demo" class="nav-link ">Demo</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <div class="d-flex justify-content-center text-center" id="home">
+        <h1>3D Modelling and Computational Geometry </h1>
+    </div>
+    
+    <div class="container" id="summary" style="width: 65%;">
+        <h2>Project Description</h2>
+        <hr>
+
+        <p>In this project, the goal was to implement and visualize a series of mathematical and geometrical concepts applied in Computational Geometry.
+            The first task, was representing a given 3-dimensional object with a series of voxels. A voxel is the 3-dimensional equivalent, of what the pixel represents for the 2 dimensions.
+            After establishing the volume of the model and filling it with voxels, depending on the requested resolution, we then find the voxels that are representative of the model,
+            in order to achieve a good visualization.
+        </p>
+
+        <p>
+            The second part of the project consists of calculating and displaying the distance transform of the voxelized model. The distance transform is particularly 
+            useful for proximity checks between models. In this project's context, the transform is used to show the diferrent levels of the voxels. The most
+            outer voxels, for example, are given a distance transform value of 0, then the adjacent inner voxels are given a value of 1, and so on.
+            To visualize the distance transform, a grayscale method was employed. In the first scenario, it was directly applied to the voxel centers, while in the second scenario, it was applied to the projection of those centers onto a given plane.
+        </p>
+
+        <p>
+            The final part of the project consists of the collision detection task. In this stage, given two models, we calculate the intersection points
+            between them, and deciding if a collision exists. In addition to the exact points where a collision takes place, we calculate the percentage of
+            overlap between the two models, given a prior voxelization of them.  
+
+        </p>
+    </div>
+    
+
+    <div class="container" id="concepts" style="width: 65%;">
+        <h2>Key Concepts</h2>
+        <hr>
+
+        <ul>
+            <li>3D Modelling</li>
+            <li>Computational Geometry</li>
+            <li>Voxel</li>
+            <li>Distance Transform</li>
+            <li>Collision Detection</li>
+             
+
+        </ul>
+
+
+    </div>
+    
+    <div class="container" id="software" style="width: 65%;">
+        
+        <h2>Relevant software and Programming languages used</h2>
+        <hr>
+
+        <ul style="list-style-type: square;">
+            <li >Frameworks
+                <ul style="list-style-type: circle;">
+                    <li>Visual Studio</li>
+                    <li>CMake</li>
+                    
+
+                </ul>
+
+            </li>
+
+            <li>Programming Languages
+                <ul>
+                    <li>C++</li>
+                    
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+    
+
+    <div class="container" id="demo" style="width: 65%;">
+        <h2>Demo</h2>
+        <hr>
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/7vp3LzHivKQ" title="3D Modelling and Computational Geometry" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+
+    
+
+    </div>
+    
+
+    <div class="d-flex w-100" id="footer" style="margin-left: 0px; margin-right: 0px; margin-top: 20px;">
+        <footer class="py-3 w-100">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item foot_text_col"><a href="#home" class="nav-link px-2  ">Home</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link px-2 ">Project Summary</a></li>
+            <li class="nav-item"><a href="#concepts" class="nav-link px-2 ">Key Concepts</a></li>
+            <li class="nav-item"><a href="#software" class="nav-link px-2 ">Relevant software and Programming languages</a></li>
+            <li class="nav-item"><a href="#demo" class="nav-link px-2 ">Demo</a></li>
+          </ul>
+          <a href="../index.html"  style="text-decoration:none"><p class="text-center ">© 2023 George Mouratidis</p></a>
+          
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

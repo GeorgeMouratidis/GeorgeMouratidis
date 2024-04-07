@@ -1,0 +1,51 @@
+
+body{
+    background: #FD841F; ;
+}
+
+
+#footer{
+    background-color: #E14D2A;
+}
+
+.foot_text_col:hover{
+    color: #B0A695;
+    
+}
+
+p{
+    font-size: larger;
+    text-align: justify;
+}
+#software li{
+    font-size: large;
+}
+#concepts li{
+    font-size: large;
+}
+@media (min-width: 670px) {
+    .test{
+        position: fixed !important;
+        top: 8em !important;
+    }
+  }
+
+  .nav{
+    background-color: #E14D2A;
+  }
+
+  p{
+    color: #001253;
+  }
+
+  a{
+    color: #001253;
+  }
+
+  .nav-link{
+    color: #001253;
+  } 
+
+  li{
+    color: #001253;
+  }

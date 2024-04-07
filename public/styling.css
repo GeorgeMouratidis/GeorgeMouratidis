@@ -1,0 +1,371 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+* {
+  position: relative;
+  box-sizing: border-box; }
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+ul{
+  list-style: none;
+}
+
+.words{
+  color: #001253;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  text-align: center;
+  color: #001253;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.aboutH1{
+  text-align: center;
+  color: #001253;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 60px;
+
+}
+
+.about{
+  
+  height: 100px;
+  z-index: 1;
+  padding-top: 10%;
+}
+
+#app {
+  z-index: 1; 
+}
+  
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-bottom: 4vmin;
+  margin-top: 50px;
+ 
+  height: 100%;
+  width: 100%;
+  background: #FD841F;
+  color: #001253; 
+  
+}
+
+body {
+  display: grid;
+  background: #FD841F; }
+
+.title {
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-family: "Prata", serif;
+  font-size: 8vw;
+  width: 100%;
+  z-index: 2; }
+  .title > .title-inner {
+    display: inline-block; }
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%); }
+  to {
+    transform: none; } }
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%); }
+  to {
+    transform: none; } }
+
+.cafe,
+.mozart {
+  animation: outer-left 1s 1s ease-in-out cubic-bezier(0.5, 0, 0.1, 1) both; }
+
+.title-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease-in-out both; }
+
+.cafe-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease-in-out both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both; }
+
+.mozart-inner {
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both; }
+
+.title {
+  animation: outer-left 1s 1s ease-in-out both; }
+
+.cafe > .cafe-inner {
+  display: inline-block; }
+
+.mozart {
+  display: inline-block; }
+  
+@keyframes image-in {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+    .image img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+
+.image {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -2rem;
+  opacity: 0.7;
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards; }
+
+
+
+
+  @media screen and (min-width: 960px) {
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+}
+
+.content {
+  margin-bottom: 4em;
+  margin-top: 4em;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.content p {
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+.v8 p {
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(to right, #9ae6b4, #ff0);
+  padding-bottom: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  margin-top: 100px;
+}
+.v8:hover p {
+  background-size: 100% 100%;
+}
+
+.info{
+  align-content: center;
+
+}
+
+
+.education{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  align-self: center;
+  height: 150px;
+  overflow-y: scroll;
+  
+  
+}
+/* 
+
+ 
+*/
+
+.education::-webkit-scrollbar{
+  width: 0%;
+}
+
+.listCon{
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height:140px ;
+  width: auto;
+
+}
+.ed{
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #001253;
+  width:400px;
+  height: 50px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+  color: #9ae6b4;
+
+
+}
+
+#f{
+  margin-top: 400px;
+}
+
+.projects{
+  transform: scale(0.6);
+  transition: transform 1s;
+}
+
+.zoom:hover{
+  .projects{
+    transform: scale(1.0);
+  }
+
+}
+
+/* work experience*/
+
+.work{
+  font-size: 2.26rem;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workAnimation {
+  height:100px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.workAnimation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:90px;
+  margin-bottom: 1.6rem;
+  display:inline-block;
+  align-content: center;
+  align-items: center;
+
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+@media (min-width:320px ){
+
+  .workAnimation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:150px;
+    margin-bottom: 1.6rem;
+    display:inline-block;
+    align-content: center;
+    align-items: center;
+  
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
+  }
+  
+.work{
+  font-size: 2.26rem;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#bar{
+  font-size: x-large;
+}
+  
+  
+
+
+
+}
+
+.workAnimation div:first-child {
+  animation: text-animation 10s infinite;
+}
+
+.first div {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background-color:#FD841F;
+  
+}
+.second div {
+  background-color:#FD841F;
+
+}
+
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: 0;}
+  60% {margin-top: 0;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+/* footer */
+
+#footer{
+  background-color: #E14D2A;
+  
+}
+
+.foot li a{
+  color: #001253;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.foot p{
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* projects */
+.card-body{
+  background-color: #3E6D9C;
+}
+
+.card-text{
+  font-size: large;
+}
+.btn-group{
+  background-color: #001253;
+}
+h5{
+    background-color: #3E6D9C;
+
+}
