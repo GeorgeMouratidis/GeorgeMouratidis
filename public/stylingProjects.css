@@ -1,15 +1,15 @@
 
 body{
-    background: #FD841F; ;
+    background: #DDF2FD; ;
 }
 
 
 #footer{
-    background-color: #E14D2A;
+    background-color: #427D9D;
 }
 
 .foot_text_col:hover{
-    color: #B0A695;
+    color: #9BBEC8;
     
 }
 
@@ -31,21 +31,47 @@ p{
   }
 
   .nav{
-    background-color: #E14D2A;
+    background-color: #427D9D;
   }
 
   p{
-    color: #001253;
+    color: #164863;
   }
 
   a{
-    color: #001253;
+    color: #DDF2FD;
   }
 
   .nav-link{
-    color: #001253;
+    color: #DDF2FD;
   } 
 
   li{
-    color: #001253;
+    color: #164863;
   }
+
+  .rounded{
+    background-color: #427D9D !important;
+  }
+
+
+  .cc{
+    color: black;
+  }
+
+  
+.nav-link:hover{
+  color: #9ae6b4 !important;
+  font-size: larger;
+}
+
+.cc:hover{
+  color: #9ae6b4 !important;
+  font-size: larger;
+
+}
+
+.nav-link{
+  font-size: large;
+  color: black !important;
+}
