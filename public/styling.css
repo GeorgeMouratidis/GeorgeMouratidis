@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 * {
   position: relative;
   box-sizing: border-box; }
@@ -165,7 +166,7 @@ body {
   margin-bottom: 4em;
   margin-top: 4em;
   font-size: x-large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Quicksand",sans-serif;
   font-weight: bold;
 }
 .content p {
@@ -419,4 +420,17 @@ h5{
 .nav-link{
   font-size: large;
   color: black !important;
+}
+
+
+@media  (min-width:1400px) {
+
+  .mained{
+
+    margin-top: 50px;
+
+    
+  
+  }
+  
 }
